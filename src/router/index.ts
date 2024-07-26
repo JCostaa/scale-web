@@ -12,6 +12,8 @@ import ProfileView from '@/views/ProfileView.vue'
 import TablesView from '@/views/TablesView.vue'
 import AlertsView from '@/views/UiElements/AlertsView.vue'
 import ButtonsView from '@/views/UiElements/ButtonsView.vue'
+import ListEmployee from '@/views/Employee/ListEmployee.vue'
+import ImportEmployee from '@/views/Employee/ImportEmployee.vue'
 
 const routes = [
   {
@@ -20,6 +22,22 @@ const routes = [
     component: ECommerceView,
     meta: {
       title: 'eCommerce Dashboard'
+    }
+  },
+  {
+    path: '/import-employees',
+    name: 'import-employee',
+    component: ImportEmployee,
+    meta: {
+      title: 'Importação de funcionarios'
+    }
+  },
+  {
+    path: '/employees',
+    name: 'employee',
+    component: ListEmployee,
+    meta: {
+      title: 'Importação de funcionarios'
     }
   },
   {
